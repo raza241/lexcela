@@ -1,0 +1,841 @@
+/*!
+ * Start Style - lexcela_digital
+ * Copyright Reserved by lexcela_digital
+ */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+
+body {
+    font-size: 1rem;
+    overflow-x: hidden;
+    font-family: 'BarlowLight';
+
+}
+
+
+/**
+* fonts -g  |Barlow
+*/
+
+@font-face {
+    font-family: 'BarlowBold';
+    src: url('../fonts/BarlowBold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'BarlowExtraBoldItalic';
+    src: url('../fonts/BarlowExtraBoldItalic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'BarlowMedium';
+    src: url('../fonts/BarlowMedium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'BarlowMediumItalic';
+    src: url('../fonts/BarlowMediumItalic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'BarlowLight';
+    src: url('../fonts/BarlowLight.ttf') format('truetype');
+}
+
+/**
+* fonts | Biiter
+*/
+
+@font-face {
+    font-family: 'BitterBold';
+    src: url('../fonts/BitterBold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'BitterBoldItalic';
+    src: url('../fonts/BitterBoldItalic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'BitterItalic';
+    src: url('../fonts/BitterItalic.ttf') format('truetype');
+}
+
+
+
+/** 
+* Base | Anchor -g
+*/
+
+a {
+    -webkit-transition: all .35s;
+    transition: all .35s
+}
+
+a:focus,
+a:hover {
+    color: initial;
+}
+
+
+section {
+    padding: 100px 0
+}
+
+
+/** 
+* button's  -g
+*/
+
+.btn {
+    font-weight: 400;
+    border: 1px solid transparent;
+    text-transform: uppercase;
+    font-family: 'BarlowBold';
+    letter-spacing: 0.08rem;
+    padding: .45rem 2.4rem;
+    font-size: .82rem;
+    line-height: 1.5;
+    border-radius: 3rem;
+    -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: transparent;
+    border-color: #fff;
+}
+
+.btn-primary:hover {
+    color: #005eb8;
+    background-color: #fff;
+    border-color: #fff;
+}
+
+.btn-primary:focus,
+.btn-primary.focus {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.btn-primary.disabled,
+.btn-primary:disabled {
+    color: #fff;
+    background-color: transparent;
+    border-color: #fff;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active,
+.btn-primary:not(:disabled):not(.disabled).active,
+.show>.btn-primary.dropdown-toggle {
+    color: #005eb8;
+    background-color: #fff;
+    border-color: #fff;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active:focus,
+.btn-primary:not(:disabled):not(.disabled).active:focus,
+.show>.btn-primary.dropdown-toggle:focus {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+
+
+/**
+* width
+*/
+.w-85 {
+    width: 85%;
+}
+
+
+/**
+* Typography | Font's
+*/
+
+
+
+
+
+/*
+============================
+     Navigation
+============================
+*/
+
+/**
+* sub pages Nav
+*/
+
+.navbar-pages {
+    background: rgb(16, 24, 153);
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(80deg, rgba(16, 24, 153, 1) 0%, rgba(16, 24, 153, 1) 0%, rgba(41, 204, 123, 1) 100%);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(80deg, rgba(16, 24, 153, 1) 0%, rgba(16, 24, 153, 1) 0%, rgba(41, 204, 123, 1) 100%);
+
+}
+
+
+
+#mainNav {
+    border-color: rgba(34, 34, 34, .05);
+    background-color: #fff;
+    -webkit-transition: all .35s;
+    transition: all .35s;
+}
+
+#mainNav .navbar-toggler {
+    font-size: 12px;
+    padding: 8px 10px;
+    color: #222
+}
+
+#mainNav .navbar-nav>li>a {
+    font-size: 13px;
+    letter-spacing: .5px;
+    text-transform: uppercase;
+    font-family: 'BarlowBold';
+    padding-right: 1.2rem;
+    padding-left: 1.2rem;
+}
+
+#navbarResponsive a.btn {
+    font-size: .75rem;
+}
+
+#navbarResponsive .btn {
+    padding: .35rem 2rem;
+}
+
+#mainNav .navbar-nav>li>a.active {
+    color: #2acc7c !important;
+    background-color: transparent;
+}
+
+#mainNav .navbar-nav>li>a.active:hover {
+    background-color: transparent
+}
+
+#mainNav .navbar-nav>li>a,
+#mainNav .navbar-nav>li>a:focus {
+    color: #222;
+}
+
+#mainNav .navbar-nav>li>a:focus:hover,
+#mainNav .navbar-nav>li>a:hover {
+    color: #2acc7c;
+}
+
+@media (min-width:992px) {
+    #mainNav {
+        border-color: transparent;
+        background-color: transparent
+    }
+
+    #mainNav .navbar-brand {
+        color: fade(white, 70%)
+    }
+
+    #mainNav .navbar-brand:focus,
+    #mainNav .navbar-brand:hover {
+        color: #fff
+    }
+
+    #mainNav .navbar-nav>li>a,
+    #mainNav .navbar-nav>li>a:focus {
+        color: rgba(255, 255, 255, 1)
+    }
+
+    #mainNav .navbar-nav>li>a:focus:hover,
+    #mainNav .navbar-nav>li>a:hover {
+        color: #fff
+    }
+
+    #mainNav.navbar-shrink {
+        border-color: rgba(34, 34, 34, .1);
+        background-color: #fff
+    }
+
+    #mainNav.navbar-shrink .navbar-brand {
+        color: #222
+    }
+
+    #mainNav.navbar-shrink .navbar-brand:focus,
+    #mainNav.navbar-shrink .navbar-brand:hover {
+        color: #2acc7c
+    }
+
+    #mainNav.navbar-shrink .navbar-nav>li>a,
+    #mainNav.navbar-shrink .navbar-nav>li>a:focus {
+        color: #222
+    }
+
+    #mainNav.navbar-shrink .navbar-nav>li>a:focus:hover,
+    #mainNav.navbar-shrink .navbar-nav>li>a:hover {
+        color: #2acc7c
+    }
+
+    /**
+* flowers  -g
+*/
+    /* hero */
+    #hero::after {
+        content: url(../img/hero.png);
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        right: 0;
+        z-index: 999;
+    }
+
+    #hero::before {
+
+        background-image: url(../img/paper_stack.png);
+        position: absolute;
+        right: -5%;
+        background-size: contain;
+        background-position: top right;
+        background-repeat: no-repeat;
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+
+        content: '';
+    }
+
+    /* dashboard & lexcela */
+
+    .dark-flowers,
+    .Light-flowers {
+        position: relative;
+    }
+
+    .dark-flowers::after {
+        content: url(../img/dark-flowers.png);
+    }
+
+    .Light-flowers::after {
+        content: url(../img/Light-flowers.png);
+    }
+
+    .dark-flowers::after,
+    .Light-flowers::after {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: -1;
+    }
+
+    .dark-flowers::after {
+        top: -33px;
+    }
+}
+
+/*
+==============================================
+    P:  Home
+==============================================
+*/
+
+/*
+============================
+    S: hero
+============================
+*/
+header.masthead {
+    width: 100%;
+    color: #fff;
+    position: relative;
+}
+
+#hero {
+    background: rgb(16, 24, 153);
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(80deg, rgba(16, 24, 153, 1) 0%, rgba(16, 24, 153, 1) 0%, rgba(41, 204, 123, 1) 100%);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(80deg, rgba(16, 24, 153, 1) 0%, rgba(16, 24, 153, 1) 0%, rgba(41, 204, 123, 1) 100%);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+header.masthead .header-content {
+    max-width: 500px;
+    margin-bottom: 100px;
+    text-align: center
+}
+
+header.masthead .header-content h1 {
+    font-family: 'BitterBoldItalic';
+}
+
+header.masthead .header-content h2 {
+    font-family: 'BarlowLight';
+    color: rgba(255, 255, 255, .7)
+}
+
+
+@media (min-width:992px) {
+    header.masthead {
+        height: 100vh;
+        /* min-height: 775px; */
+        min-height: auto;
+        padding-top: 0;
+        padding-bottom: 0;
+
+    }
+
+    header.masthead .header-content {
+        margin-bottom: 0;
+        text-align: left
+    }
+
+    header.masthead .header-content h1 {
+        font-size: 50px
+    }
+
+}
+
+/*
+============================
+    S: wht-lexcela
+============================
+*/
+
+#wht-lexcela h1,
+#pricing .section-heading1 h1 {
+    background: rgb(9, 196, 106);
+    /* fallback for old browsers */
+    background:
+        -webkit-linear-gradient(to left,
+        #27c882 50%,
+        #009dc9 60%,
+        #0080d2 80%,
+        #075dbc 100%) left bottom no-repeat;
+    /* Chrome 10-25, Safari 5.1-6 */
+    background:
+        linear-gradient(to left,
+        #27c882 50%,
+        #009dc9 60%,
+        #0080d2 80%,
+        #075dbc 100%) left bottom no-repeat;
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: 100% 5px;
+    display: inline-block;
+}
+
+#wht-lexcela h1 {
+    padding-bottom: 30px;
+    font-family: 'BitterBold';
+}
+
+#wht-lexcela h2,
+#wht-lexcela p {
+    font-family: 'BarlowMedium';
+}
+
+#wht-lexcela p {
+    line-height: 1.8;
+}
+
+/*
+============================
+    S: Our Dashbaord
+============================
+*/
+#dashboard {
+    z-index: 999;
+    background-origin: border-box;
+    background: rgb(9, 196, 106);
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(90deg, rgba(9, 196, 106, 1) 0%, rgba(9, 196, 106, 1) 0%, rgba(0, 196, 181, 1) 100%);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(90deg, rgba(9, 196, 106, 1) 0%, rgba(9, 196, 106, 1) 0%, rgba(0, 196, 181, 1) 100%);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+#dashboard .section-heading2 h1 {
+    color: #fff;
+    font-family: 'BitterBold';
+}
+
+
+
+
+/*
+==============================================
+    P: Membership Pricing
+==============================================
+*/
+
+
+/*
+============================
+    S: Pricing
+============================
+*/
+#ricing .section-heading1 {
+    font-family: 'BitterBoldItalic';
+}
+
+#pricing .section-heading1 h1 {
+    padding-bottom: 5px;
+}
+
+/* icon -g*/
+.icon {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.icon {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.icon-inner {
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    border-radius: 100%;
+    text-align: center;
+    transform: scale(1);
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+/* basic,standard,Premium */
+.basic {
+    line-height: 70px;
+    background: #0082ff;
+}
+
+.standard {
+    background: #00c4b5;
+}
+
+.premium {
+    background: #26d07c;
+}
+
+.pricing .card {
+    border: none;
+    border-top-right-radius: 1.2rem;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    transition: all 0.2s;
+    /* box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1); */
+    box-shadow: 0 0.1rem .3rem 0 rgba(0, 0, 0, 0.1);
+}
+
+.pricing .card-title,
+.pricing .card-price {
+    color: #373f51;
+    font-size: 2.1875rem;
+    margin-bottom: 0;
+    font-family: 'BitterBoldItalic';
+}
+
+.pricing .card-price {
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.pricing .period {
+    font-size: 1rem;
+    text-transform: lowercase;
+    font-family: 'BitterItalic';
+}
+
+.pricing ul li {
+    color: #212529;
+    font-size: 1rem;
+    margin-bottom: .5rem;
+    font-family: 'BarlowMedium';
+    vertical-align: middle;
+    vertical-align: -webkit-baseline-middle;
+}
+
+.pricing ul li::before {
+    content: "•";
+    /* Insert content that looks like bullets */
+    padding-right: 8px;
+    color: #212529;
+}
+
+.pricing ul li.text-muted::before {
+    color: #aeb0b6;
+}
+
+.pricing ul li [class^="fas"] {
+    fill: #fff;
+    color: #0082ff;
+    font-size: 10px;
+    vertical-align: middle;
+}
+
+.pricing .tagLine {
+    margin-bottom: 0;
+    font-family: 'BarlowExtraBoldItalic';
+}
+
+.pricing .btn {
+    font-size: 80%;
+    border-radius: 5rem;
+    letter-spacing: .1rem;
+    font-weight: bold;
+    padding: .7rem;
+    transition: all 0.2s;
+}
+
+/* basic,standard,Premium | Button's */
+.btn-basic {
+    color: #fff;
+    background-color: #0082ff;
+    border-color: #0082ff;
+}
+
+.btn-standard {
+    color: #fff;
+    background-color: #00c4b5;
+    border-color: #00c4b5;
+}
+
+.btn-premium {
+    color: #fff;
+    background-color: #26d07c;
+    border-color: #26d07c;
+}
+
+.pricing .btn:hover {
+    color: #fff;
+}
+
+.pricing .btn:active,
+.pricing .btn:focus {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    outline: none;
+}
+
+/* Hover Effects on Card */
+
+@media (min-width: 992px) {
+
+    .pricing .section-heading1 {
+        margin-bottom: 6rem;
+        font-family: 'BitterBoldItalic';
+    }
+
+    .pricing .card:hover {
+        /* margin-top: -.25rem;
+        margin-bottom: .25rem; */
+        box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.3);
+    }
+
+    .pricing .card:hover .btn {
+        opacity: 1;
+    }
+
+
+    /* minus values  */
+    .-mb-5 {
+        margin-top: -2rem;
+    }
+
+}
+
+/*
+==============================================
+    P: features
+==============================================
+*/
+
+.features .section-heading h1 {
+    background: rgb(9, 196, 106);
+    /* fallback for old browsers */
+    background:
+        -webkit-linear-gradient(to left,
+        #27c882 50%,
+        #009dc9 60%,
+        #0080d2 80%,
+        #075dbc 100%) left bottom no-repeat;
+    /* Chrome 10-25, Safari 5.1-6 */
+    background:
+        linear-gradient(to left,
+        #27c882 50%,
+        #009dc9 60%,
+        #0080d2 80%,
+        #075dbc 100%) left bottom no-repeat;
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: 100% 5px;
+    display: inline-block;
+}
+
+.features .section-heading h1 {
+    padding-bottom: 10px;
+    font-family: 'BitterBoldItalic';
+
+}
+
+
+/*
+============================
+     Footer
+============================
+*/
+.footer {
+    background: #373f51;
+    padding: 2rem 1rem;
+}
+
+.footer p {
+    color: #fff;
+    font-size: 17px;
+    line-height: 1.5;
+    margin-bottom: 0;
+    font-family: 'BarlowMediumItalic';
+}
+
+.footer ul li a {
+    color: #fff;
+    font-size: 16px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-family: 'BarlowBold';
+}
+
+.footer ul li a:hover,
+.footer ul li a:active,
+.footer ul li a:focus {
+    text-decoration: none;
+
+}
+
+.copyright {
+    color: #aeb0b6;
+    font-size: 15px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-family: 'BarlowMediumItalic';
+}
+
+
+
+
+
+
+
+
+/* for Now */
+.fixed-top {
+    position: absolute !important;
+}
+
+
+
+/*
+============================
+    Created By Raza
+============================
+*/
+.bg__img{
+    background: url(../img/Group\ 9.png);
+    background-size: cover;
+    background-position: center;
+}
+#features .section-heading h1 {
+    background: rgb(9, 196, 106);
+    /* fallback for old browsers */
+    background:
+        -webkit-linear-gradient(to left,
+        #27c882 50%,
+        #009dc9 60%,
+        #0080d2 80%,
+        #075dbc 100%) left bottom no-repeat;
+    /* Chrome 10-25, Safari 5.1-6 */
+    background:
+        linear-gradient(to left,
+        #27c882 50%,
+        #009dc9 60%,
+        #0080d2 80%,
+        #075dbc 100%) left bottom no-repeat;
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: 100% 5px;
+    display: inline-block;
+    padding-bottom: 30px;
+    font-family: 'BitterBoldItalic';
+    font-size: 50px
+}
+.features__tabs{
+    background: #fff;
+    border-radius: 15px;
+    padding: 20px
+}
+.nav-pills{
+    margin: 0 0 25px
+}
+.features__tabs .nav-pills .nav-link.active{
+    background:none;
+    color: #0082ff;
+}
+.features__item{
+    width: 20%;
+}
+.features__item a{
+    text-transform: uppercase;
+    font-family: 'BarlowBold';
+    font-size: 14px;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+.features__item .far{
+    margin: 0 10px 0 0;
+    font-size: 22px;
+}
+.features__block--title{
+    font-family: 'BarlowMedium';
+    margin: 0 0 15px;
+    font-size: 62px
+}
+.features___block--content{
+    font-family: 'BarlowMedium';
+    margin:0 0 45px;
+    font-size: 20px;
+}
+.block__img{
+    box-shadow: 7px 0.5rem 0.5rem -5px rgba(0, 0, 0, 0.1)
+}
+
+.features__button{
+    text-align: center;
+}
+.button--signup{
+    background: #26d07c;
+    color: #fff;
+    line-height: 1.5;
+    font-family: 'BarlowBold';
+    font-size: 16px;
+    padding: .45rem 3.4rem;
+}
+.button--signup:hover{
+    color: #fff;
+}
+
